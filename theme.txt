@@ -44,3 +44,4 @@ terminal-font: "Iosevka Light 12"
 	align = center
 	width = 300
 	height = 20
+}
