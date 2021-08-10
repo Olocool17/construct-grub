@@ -5,13 +5,13 @@ desktop-image: "background.png"
 
 title-text: ""
 message-font: "Iosevka Medium 24"
-message-color: white
+message-color: "white"
 terminal-font: "Iosevka Light 12"
 
 + label {
 	text = "Select an OS"
 	font = "Iosevka Medium 24"
-	color = white
+	color = "white"
 	left = 26%-100
 	top = 30%
 	align = center
@@ -31,14 +31,14 @@ terminal-font: "Iosevka Light 12"
 	item_spacing = 24
 	item_pixmax_style = "item_*.png"
 	item_font = "Iosevka Medium 24"
-	item_color = white
-	selected_item_color = white
+	item_color = "white"
+	selected_item_color = "white"
 	selected_item_pixmax_style = "selected_item_*.png"
 }
 
 + label {
 	text = "@KEYMAP_SHORT@"
-	color = white
+	color = "white"
 	left = 26% - 150
 	top = 30%
 	align = center
