@@ -38,9 +38,10 @@ terminal-font: "Iosevka Light 12"
 
 + label {
 	text = "@KEYMAP_SHORT@"
+	font = "Iosevka  Light 12"
 	color = "white"
 	left = 26%-150
-	top = 30%
+	top = 30%+384
 	align = center
 	width = 300
 	height = 20
