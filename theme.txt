@@ -7,7 +7,6 @@ title-text: ""
 message-font: "Iosevka Medium 24"
 message-color: "white"
 terminal-font: "Iosevka Light 12"
-terminal-box: "terminal_*.png"
 
 + label {
 	text = "Select an OS"
