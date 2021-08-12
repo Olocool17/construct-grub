@@ -40,7 +40,7 @@ terminal-box: "terminal_*.png"
 
 + label {
 	text = "@KEYMAP_SHORT@"
-	font = "Iosevka  Light 12"
+	font = "Iosevka Light 12"
 	color = "white"
 	left = 26%-250
 	top = 30%+384
