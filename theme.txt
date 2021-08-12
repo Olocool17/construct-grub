@@ -8,8 +8,7 @@ terminal-font: "Iosevka Regular 12"
 terminal-left: "0%"
 terminal-top: "0%"
 terminal-width: "100%"
-terminal-height: "100"
-terminal-border: "0"
+terminal-height: "100%"
 
 + label {
 	text = "Select an OS"
