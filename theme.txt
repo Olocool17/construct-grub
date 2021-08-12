@@ -7,6 +7,11 @@ title-text: ""
 message-font: "Iosevka Medium 24"
 message-color: "white"
 terminal-font: "Iosevka Light 12"
+terminal-left: "0%"
+terminal-top: "0%"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
 
 + label {
 	text = "Select an OS"
