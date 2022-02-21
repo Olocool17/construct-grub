@@ -1,5 +1,7 @@
 # construct-grub
 A GRUB theme intented to be used in conjunction with construct-plymouth.
+
+![Image preview of the construct-grub theme](construct-grub-concept.png)
 # Installation
 I'm not good enough at Shell to make an install script, so unlike most other fancy themes installation must be done manually.
 - Clone the repo into /boot/grub/themes
