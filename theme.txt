@@ -32,7 +32,7 @@ terminal-height: "100%"
 	icon_height = 32
 	item_height = 32
 	item_icon_space = 5
-	item_spacing = 24
+	item_spacing = 40
 	item_pixmap_style = "item_*.png"
 	item_font = "Iosevka Regular 24"
 	item_color = "white"
