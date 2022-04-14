@@ -14,7 +14,7 @@ terminal-height: "100%"
 	text = "Select an OS"
 	font = "Iosevka Regular 24"
 	color = "white"
-	left = 26%-100
+	left = 31%-100
 	top = 31%
 	align = center
 	width = 200
@@ -22,7 +22,7 @@ terminal-height: "100%"
 }
 
 + boot_menu {
-	left = 26%-310
+	left = 31%-310
 	width = 620
 	top = 31%+60
 	height = 300
@@ -44,7 +44,7 @@ terminal-height: "100%"
 	text = "@KEYMAP_SHORT@"
 	font = "Iosevka Regular 12"
 	color = "white"
-	left = 26%-250
+	left = 31%-250
 	top = 31%+384
 	align = center
 	width = 500
