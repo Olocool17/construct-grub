@@ -3,7 +3,7 @@ A GRUB theme intented to be used in conjunction with construct-plymouth.
 
 ![Image preview of the construct-grub theme](construct-grub-concept.png)
 # Installation
-I'm not good enough at Shell to make an install script, so unlike most other fancy themes installation must be done manually.
+~~I'm not good enough at Shell to make an install script~~ This theme now has an accompanying install script!
 - Clone the repo `git clone https://github.com/Olocool17/construct-grub`
 - Configure the file `/etc/default/grub` to your liking. Items that may be of relevance are `GRUB_TIMEOUT`, `GRUB_DISABLE_SUBMENU` and kernel paramters in `GRUB_CMDLINE_LINUX_DEFAULT` . Make sure `os-prober` is installed,
 configured and enabled if you want to include other operating systems in the boot menu.
