@@ -80,15 +80,23 @@ fi
 construct_echo "Setting terminal background..."
 sudo sed -i "\|^export theme|a background_image /${GRUB_DIR}/themes/${THEME}/background.png" ${GRUB_CFG}
 
-construct_echo "Adding icon classes to menuentries..."
+construct_echo "Renaming Windows boot entry (if applicable)..."
 sudo sed -i "s|'Windows Boot Manager[^']*|'Windows 10|g" ${GRUB_CFG}
+construct_echo "Renaming EUFI Firmware boot entry (if applicable)..."
 sudo sed -i "s|'UEFI Firmware Settings'|'UEFI Settings' --class efi|g" ${GRUB_CFG}
 
 if [[ "$ID" =~ arch ]]
 then
     construct_echo "Deleting Arch with fallback initrams entry..."
     sudo awk -i inplace "/Arch Linux, with Linux linux \(/,/}/ {next} {print}" ${GRUB_CFG}
+    construct_echo "Renaming EUFI Firmware boot entry (if applicable)..."
+    sudo sed -i "s|'Arch Linux, with Linux linux'|'Arch Linux'|g" ${GRUB_CFG}
+    
 fi
 
 construct_echo "Adding shutdown menu entry..."
 sudo sed -i "\|### END /etc/grub.d/40_custom ###|i menuentry 'Shutdown' --class shutdown {\n\thalt\n}" ${GRUB_CFG}
+
+construct_echo "Installation complete!"
+construct_echo "Exiting..."
+exit
