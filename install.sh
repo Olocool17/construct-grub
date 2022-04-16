@@ -56,13 +56,13 @@ construct_echo "Ensuring GRUB uses graphical output..."
 sudo sed -i "s|^GRUB_TERMINAL|#GRUB_TERMINAL|g" /etc/default/grub
 
 construct_echo "Removing previous installation of ${THEME} if it exists..."
-sudo rm -r "/boot/${GRUB_DIR}/themes/${THEME}"
+sudo rm -r /boot/${GRUB_DIR}/themes/${THEME}
 
 construct_echo "Making theme directory..."
-sudo mkdir -p "/boot/${GRUB_DIR}/themes/${THEME}"
+sudo mkdir -p /boot/${GRUB_DIR}/themes/${THEME}
 
 construct_echo "Copying ${THEME} theme to previously created directory..."
-sudo cp -r "${THEME}-theme" "/boot/${GRUB_DIR}/themes/${THEME}"
+sudo cp -r ${THEME}-theme/* /boot/${GRUB_DIR}/themes/${THEME}
 
 construct_echo "Generating grub.cfg..."
 if [[ $GRUB_UPDATE ]]
@@ -76,3 +76,19 @@ else
     construct_echo "- Arch/Gentoo and derivatives : \`grub-mkconfig -o /boot/grub/grub.cfg\`"
     construct_echo "Exiting..."
 fi
+
+construct_echo "Setting terminal background..."
+sudo sed -i "\|^export theme|a background_image /${GRUB_DIR}/themes/${THEME}/background.png" ${GRUB_CFG}
+
+construct_echo "Adding icon classes to menuentries..."
+sudo sed -i "s|'Windows Boot Manager[^']*|'Windows 10|g" ${GRUB_CFG}
+sudo sed -i "s|'UEFI Firmware Settings'|'UEFI Settings' --class efi|g" ${GRUB_CFG}
+
+if [[ "$ID" =~ arch ]]
+then
+    construct_echo "Deleting Arch with fallback initrams entry..."
+    sudo awk -i inplace "/Arch Linux, with Linux linux \(/,/}/ {next} {print}" ${GRUB_CFG}
+fi
+
+construct_echo "Adding shutdown menu entry..."
+sudo sed -i "\|### END /etc/grub.d/40_custom ###|i menuentry 'Shutdown' --class shutdown {\n\thalt\n}" ${GRUB_CFG}
