@@ -1,7 +1,6 @@
 # construct-grub
 A GRUB theme intented to be used in conjunction with construct-plymouth.
 
----
 
 ## construct-grub
 ![Image preview of the construct-grub theme](construct-grub-concept.png)
@@ -10,6 +9,9 @@ A GRUB theme intented to be used in conjunction with construct-plymouth.
 
 ## construct-legacy-grub
 ![Image preview of the construct-legacy-grub theme](construct-legacy-grub-concept.png)
+
+---
+
 # Installation
 ~~I'm not good enough at Shell to make an install script~~ This theme now has an accompanying install script!
 - Clone the repo `git clone https://github.com/Olocool17/construct-grub`
