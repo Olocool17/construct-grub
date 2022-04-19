@@ -13,11 +13,17 @@ then
     exit
 fi
 
+if [[ ${1} =~ legacy ]]
+then
+    THEME="construct-legacy-grub"
+fi
+
 construct_echo ""
 construct_echo "\t|--------------|"
 construct_echo "\t|construct-grub|  by Olocool17"
 construct_echo "\t|--------------|"
 construct_echo ""
+construct_echo "Theme to be installed: ${THEME}"
 
 GRUB_DIR="grub"
 GRUB_UPDATE=""
