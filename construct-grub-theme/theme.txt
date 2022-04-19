@@ -35,7 +35,7 @@ terminal-height: "100%"
 	item_icon_space = 5
 	item_spacing = 20
 	item_pixmap_style = "item_*.png"
-	item_font = "Iosevka Medium 24"
+	item_font = "Iosevka Medium 20"
 	item_color = "white"
 	selected_item_color = "white"
 	selected_item_pixmap_style = "selected_item_*.png"
