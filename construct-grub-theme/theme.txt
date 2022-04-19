@@ -4,7 +4,7 @@
 desktop-image: "background.png"
 
 title-text: ""
-terminal-font: "Iosevka Regular 12"
+terminal-font: "Iosevka Light 12"
 terminal-left: "0%"
 terminal-top: "0%"
 terminal-width: "100%"
@@ -12,7 +12,7 @@ terminal-height: "100%"
 
 + label {
 	text = "Select an OS"
-	font = "Iosevka Regular 24"
+	font = "Iosevka Medium 24"
 	color = "white"
 	left = 31%-100
 	top = 31%
@@ -35,7 +35,7 @@ terminal-height: "100%"
 	item_icon_space = 5
 	item_spacing = 20
 	item_pixmap_style = "item_*.png"
-	item_font = "Iosevka Regular 24"
+	item_font = "Iosevka Medium 24"
 	item_color = "white"
 	selected_item_color = "white"
 	selected_item_pixmap_style = "selected_item_*.png"
@@ -47,7 +47,7 @@ terminal-height: "100%"
 
 + label {
 	text = "@KEYMAP_SHORT@"
-	font = "Iosevka Regular 12"
+	font = "Iosevka Light 12"
 	color = "white"
 	left = 31%-250
 	top = 31%+384
