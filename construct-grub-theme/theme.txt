@@ -15,7 +15,7 @@ terminal-height: "100%"
 	font = "Iosevka Regular 24"
 	color = "white"
 	left = 31%-100
-	top = 31%
+	top = 36%-60
 	align = center
 	width = 200
 	height = 30
@@ -24,7 +24,7 @@ terminal-height: "100%"
 + boot_menu {
 	left = 31%-270
 	width = 590
-	top = 31%+60
+	top = 36%
 	height = 300
 	menu_pixmap_style = "boot_menu_*.png"
 	
@@ -50,7 +50,7 @@ terminal-height: "100%"
 	font = "Iosevka Regular 12"
 	color = "white"
 	left = 31%-250
-	top = 31%+384
+	top = 36%+324
 	align = center
 	width = 500
 	height = 20
