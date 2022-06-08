@@ -1,6 +1,10 @@
-# construct-grub
+<h1 align="center">
+construct-grub
+</h1>
+<p align="center">
 A GRUB theme intented to be used in conjunction with construct-plymouth.
-
+</p>
+ 
 ---
 ## construct-grub
 ![Image preview of the construct-grub theme](construct-grub-concept.png)
