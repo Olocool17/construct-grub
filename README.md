@@ -1,11 +1,9 @@
 # construct-grub
 A GRUB theme intented to be used in conjunction with construct-plymouth.
 
-
+---
 ## construct-grub
 ![Image preview of the construct-grub theme](construct-grub-concept.png)
-
----
 
 ## construct-legacy-grub
 ![Image preview of the construct-legacy-grub theme](construct-legacy-grub-concept.png)
